@@ -1,21 +1,20 @@
 {
-  "name": "unworded",
-  "private": true,
+  "name": "unworded-cms",
   "version": "1.0.0",
-  "main": "package.json",
+  "description": "Unworded - CMS Configuration",
+  "private": true,
   "license": "UNLICENSED",
+  "main": "package.json",
   "scripts": {
-    "dev": "sanity dev",
-    "start": "sanity start",
-    "build": "sanity build",
-    "deploy": "sanity deploy",
-    "deploy-graphql": "sanity graphql deploy"
+    "dev": "sanity dev --env-file .env",
+    "start": "sanity start --env-file .env",
+    "build": "sanity build --env-file .env",
+    "deploy": "sanity deploy --env-file .env",
+    "deploy-graphql": "sanity graphql deploy --env-file .env"
   },
-  "keywords": [
-    "sanity"
-  ],
   "dependencies": {
     "@sanity/icons": "^2.6.0",
+    "@sanity/orderable-document-list": "^1.2.1",
     "@sanity/ui": "^2.0.0",
     "@sanity/vision": "^3.29.1",
     "react": "^18.2.0",
